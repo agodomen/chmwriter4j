@@ -52,8 +52,7 @@ public class HHK extends HH {
 		boolean result = false;
 		// 从表index_html_file中取索引HTML文件的绝对地址
 		@SuppressWarnings("unchecked")
-		List<IndexHtmlFile> list = sqlMapClient
-				.queryForList("selectAllIndexHtmlFiles");
+		List<IndexHtmlFile> list = sqlMapClient.queryForList("selectAllIndexHtmlFiles");
 		if (list.size() > 0) {
 			for (IndexHtmlFile ihf : list) {// 对于每个索引HTML文件
 				createEntries(ihf.getPath());// 创建entry表

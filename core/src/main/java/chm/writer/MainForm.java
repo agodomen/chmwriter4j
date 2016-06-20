@@ -25,7 +25,7 @@ public class MainForm extends JFrame {
 		initComponents();
 		// 新建一个DropTargetListener对象(匿名类),用于拖放文件/文件夹
 		DropTargetListener dtl = new DropTargetListener() {
-			@Override
+			//@Override
 			public void drop(DropTargetDropEvent dtde) {
 				dtde.acceptDrop(DnDConstants.ACTION_COPY);
 				Transferable transferable = dtde.getTransferable();
@@ -54,19 +54,19 @@ public class MainForm extends JFrame {
 				dtde.dropComplete(true);
 			}
 
-			@Override
+			//@Override
 			public void dropActionChanged(DropTargetDragEvent dtde) {
 			}
 
-			@Override
+			//@Override
 			public void dragOver(DropTargetDragEvent dtde) {
 			}
 
-			@Override
+			//@Override
 			public void dragExit(DropTargetEvent dte) {
 			}
 
-			@Override
+			//@Override
 			public void dragEnter(DropTargetDragEvent dtde) {
 			}
 		};
@@ -76,7 +76,7 @@ public class MainForm extends JFrame {
 		new DropTarget(this.tfDocPath, dtl);
 		// 设计定时器,控制进度条
 		ActionListener listener = new ActionListener() {
-			@Override
+			//@Override
 			public void actionPerformed(ActionEvent e) {
 				JProgressBar pb = MainForm.this.pb;
 				pb.setValue((pb.getValue() + 1) % pb.getMaximum());
@@ -211,7 +211,7 @@ public class MainForm extends JFrame {
 		//---- btnSelectDocPath ----
 		btnSelectDocPath.setText("\u9009\u62e9");
 		btnSelectDocPath.addActionListener(new ActionListener() {
-			@Override
+			//@Override
 			public void actionPerformed(ActionEvent e) {
 				btnSelectDocPathActionPerformed(e);
 			}
@@ -228,7 +228,7 @@ public class MainForm extends JFrame {
 		tfCHMFileName.setForeground(Color.blue);
 		tfCHMFileName.setText("API");
 		tfCHMFileName.addCaretListener(new CaretListener() {
-			@Override
+			//@Override
 			public void caretUpdate(CaretEvent e) {
 				tfCHMFileNameCaretUpdate(e);
 			}
@@ -258,7 +258,7 @@ public class MainForm extends JFrame {
 		btnGenerate.setFont(new Font("\u5fae\u8f6f\u96c5\u9ed1", Font.PLAIN, 30));
 		btnGenerate.setForeground(Color.red);
 		btnGenerate.addActionListener(new ActionListener() {
-			@Override
+			//@Override
 			public void actionPerformed(ActionEvent e) {
 				btnGenerateActionPerformed(e);
 			}

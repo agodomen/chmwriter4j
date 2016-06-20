@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE sqlMap
+PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap>
+	<typeAlias alias="IndexHtmlFile" type="chm.writer.entity.IndexHtmlFile"/>
+	<insert id="insertIndexHtmlFile" parameterClass="IndexHtmlFile">
+		insert into index_html_file(path) values(#path#)
+	</insert>
+	<select id="selectAllIndexHtmlFiles" resultClass="IndexHtmlFile">
+		select * from index_html_file
+	</select>
+	<delete id="deleteAllIndexHtmlFiles">
+		delete from index_html_file
+	</delete>
+</sqlMap>

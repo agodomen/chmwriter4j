@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_35" class="java.beans.XMLDecoder"> 
+ <object class="com.jformdesigner.model.FormModel"> 
+  <void property="contentType"> 
+   <string>form/swing</string> 
+  </void> 
+  <void property="root"> 
+   <object class="com.jformdesigner.model.FormRoot"> 
+    <void method="add"> 
+     <object class="com.jformdesigner.model.FormWindow"> 
+      <string>javax.swing.JFrame</string> 
+      <object class="com.jformdesigner.model.FormLayoutManager"> 
+       <class>com.jformdesigner.runtime.NullLayout</class> 
+      </object> 
+      <void method="setProperty"> 
+       <string>title</string> 
+       <string>CHMWriter 3.0 -by smilethat@qq.com</string> 
+      </void> 
+      <void method="setProperty"> 
+       <string>defaultCloseOperation</string> 
+       <int>3</int> 
+      </void> 
+      <void method="setProperty"> 
+       <string>$locationPolicy</string> 
+       <int>0</int> 
+      </void> 
+      <void method="setProperty"> 
+       <string>iconImage</string> 
+       <object class="com.jformdesigner.model.FormObject" field="NULL_VALUE"/> 
+      </void> 
+      <void method="setProperty"> 
+       <string>$sizePolicy</string> 
+       <int>1</int> 
+      </void> 
+      <void method="setProperty"> 
+       <string>resizable</string> 
+       <boolean>false</boolean> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JLabel</string> 
+        <void method="setProperty"> 
+         <string>text</string> 
+         <string>Java Doc目录</string> 
+        </void> 
+        <void property="name"> 
+         <string>label1</string> 
+        </void> 
+       </object> 
+       <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+        <class>com.jformdesigner.runtime.NullConstraints</class> 
+        <void method="setProperty"> 
+         <string>x</string> 
+         <int>10</int> 
+        </void> 
+        <void method="setProperty"> 
+         <string>y</string> 
+         <int>15</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JTextField</string> 
+        <void method="setProperty"> 
+         <string>foreground</string> 
+         <object class="java.awt.Color" field="blue"/> 
+        </void> 
+        <void property="name"> 
+         <string>tfDocPath</string> 
+        </void> 
+       </object> 
+       <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+        <class>com.jformdesigner.runtime.NullConstraints</class> 
+        <void method="setProperty"> 
+         <string>x</string> 
+         <int>106</int> 
+        </void> 
+        <void method="setProperty"> 
+         <string>y</string> 
+         <int>9</int> 
+        </void> 
+        <void method="setProperty"> 
+         <string>width</string> 
+         <int>359</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JButton</string> 
+        <void method="setProperty"> 
+         <string>text</string> 
+         <string>选择</string> 
+        </void> 
+        <void property="name"> 
+         <string>btnSelectDocPath</string> 
+        </void> 
+        <void method="addEvent"> 
+         <object class="com.jformdesigner.model.FormEvent"> 
+          <string>java.awt.event.ActionListener</string> 
+          <string>actionPerformed</string> 
+          <string>btnSelectDocPathActionPerformed</string> 
+          <boolean>true</boolean> 
+         </object> 
+        </void> 
+       </object> 
+       <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+        <class>com.jformdesigner.runtime.NullConstraints</class> 
+        <void method="setProperty"> 
+         <string>x</string> 
+         <int>470</int> 
+        </void> 
+        <void method="setProperty"> 
+         <string>y</string> 
+         <int>9</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JLabel</string> 
+        <void method="setProperty"> 
+         <string>text</string> 
+         <string>chm文件名</string> 
+        </void> 
+        <void property="name"> 
+         <string>label2</string> 
+        </void> 
+       </object> 
+       <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+        <class>com.jformdesigner.runtime.NullConstraints</class> 
+        <void method="setProperty"> 
+         <string>x</string> 
+         <int>10</int> 
+        </void> 
+        <void method="setProperty"> 
+         <string>y</string> 
+         <int>52</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JTextField</string> 
+        <void method="setProperty"> 
+         <string>foreground</string> 
+         <object class="java.awt.Color" field="blue"/> 
+        </void> 
+        <void method="setProperty"> 
+         <string>text</string> 
+         <string>API</string> 
+        </void> 
+        <void property="name"> 
+         <string>tfCHMFileName</string> 
+        </void> 
+        <void method="addEvent"> 
+         <object class="com.jformdesigner.model.FormEvent"> 
+          <string>javax.swing.event.CaretListener</string> 
+          <string>caretUpdate</string> 
+          <string>tfCHMFileNameCaretUpdate</string> 
+          <boolean>true</boolean> 
+         </object> 
+        </void> 
+       </object> 
+       <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+        <class>com.jformdesigner.runtime.NullConstraints</class> 
+        <void method="setProperty"> 
+         <string>x</string> 
+         <int>106</int> 
+        </void> 
+        <void method="setProperty"> 
+         <string>y</string> 
+         <int>46</int> 
+        </void> 
+        <void method="setProperty"> 
+         <string>width</string> 
+         <int>190</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JLabel</string> 
+        <void method="setProperty"> 
+         <string>text</string> 
+         <string>.chm</string> 
+        </void> 
+        <void method="setProperty"> 
+         <string>foreground</string> 
+         <object class="java.awt.Color" field="blue"/> 
+        </void> 
+        <void property="name"> 
+         <string>label3</string> 
+        </void> 
+       </object> 
+       <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+        <class>com.jformdesigner.runtime.NullConstraints</class> 
+        <void method="setProperty"> 
+         <string>x</string> 
+         <int>300</int> 
+        </void> 
+        <void method="setProperty"> 
+         <string>y</string> 
+         <int>55</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JLabel</string> 
+        <void method="setProperty"> 
+         <string>text</string> 
+         <string>chm文件标题</string> 
+        </void> 
+        <void property="name"> 
+         <string>label4</string> 
+        </void> 
+       </object> 
+       <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+        <class>com.jformdesigner.runtime.NullConstraints</class> 
+        <void method="setProperty"> 
+         <string>x</string> 
+         <int>10</int> 
+        </void> 
+        <void method="setProperty"> 
+         <string>y</string> 
+         <int>89</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JTextField</string> 
+        <void method="setProperty"> 
+         <string>foreground</string> 
+         <object class="java.awt.Color" field="blue"/> 
+        </void> 
+        <void method="setProperty"> 
+         <string>text</string> 
+         <string>API</string> 
+        </void> 
+        <void property="name"> 
+         <string>tfCHMTitle</string> 
+        </void> 
+       </object> 
+       <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+        <class>com.jformdesigner.runtime.NullConstraints</class> 
+        <void method="setProperty"> 
+         <string>x</string> 
+         <int>106</int> 
+        </void> 
+        <void method="setProperty"> 
+         <string>y</string> 
+         <int>83</int> 
+        </void> 
+        <void method="setProperty"> 
+         <string>width</string> 
+         <int>190</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JButton</string> 
+        <void method="setProperty"> 
+         <string>text</string> 
+         <string>生成</string> 
+        </void> 
+        <void method="setProperty"> 
+         <string>font</string> 
+         <object class="java.awt.Font"> 
+          <string>微软雅黑</string> 
+          <int>0</int> 
+          <int>30</int> 
+         </object> 
+        </void> 
+        <void method="setProperty"> 
+         <string>foreground</string> 
+         <object class="java.awt.Color" field="red"/> 
+        </void> 
+        <void property="name"> 
+         <string>btnGenerate</string> 
+        </void> 
+        <void method="addEvent"> 
+         <object class="com.jformdesigner.model.FormEvent"> 
+          <string>java.awt.event.ActionListener</string> 
+          <string>actionPerformed</string> 
+          <string>btnGenerateActionPerformed</string> 
+          <boolean>true</boolean> 
+         </object> 
+        </void> 
+       </object> 
+       <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+        <class>com.jformdesigner.runtime.NullConstraints</class> 
+        <void method="setProperty"> 
+         <string>x</string> 
+         <int>330</int> 
+        </void> 
+        <void method="setProperty"> 
+         <string>y</string> 
+         <int>45</int> 
+        </void> 
+        <void method="setProperty"> 
+         <string>width</string> 
+         <int>192</int> 
+        </void> 
+        <void method="setProperty"> 
+         <string>height</string> 
+         <int>65</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JProgressBar</string> 
+        <void property="name"> 
+         <string>pb</string> 
+        </void> 
+       </object> 
+       <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+        <class>com.jformdesigner.runtime.NullConstraints</class> 
+        <void method="setProperty"> 
+         <string>x</string> 
+         <int>0</int> 
+        </void> 
+        <void method="setProperty"> 
+         <string>y</string> 
+         <int>120</int> 
+        </void> 
+        <void method="setProperty"> 
+         <string>width</string> 
+         <int>522</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormContainer"> 
+        <string>javax.swing.JScrollPane</string> 
+        <object class="com.jformdesigner.model.FormLayoutManager"> 
+         <class>javax.swing.JScrollPane</class> 
+        </object> 
+        <void property="name"> 
+         <string>scrollPane1</string> 
+        </void> 
+        <void method="add"> 
+         <object class="com.jformdesigner.model.FormComponent"> 
+          <string>javax.swing.JTextArea</string> 
+          <void method="setProperty"> 
+           <string>text</string> 
+           <string>1.工具只能跑在Windows系列操作系统上(因为要调用hhc.exe这个chm编译程序).
+2.在生成chm文件时,工具会在Java Doc目录下产生一些临时文件,运行完毕后会自动删除.
+3.最后生成的chm文件将存储在Java Doc目录下.
+4.工具支持文件/文件夹拖放.
+5.Java Doc目录较庞大时,会需要一段较长的时间,请耐心等待.
+6.工具不仅支持jdk的doc,其他Java项目生成的doc文档都能很好的支持.</string> 
+          </void> 
+          <void method="setProperty"> 
+           <string>foreground</string> 
+           <object class="java.awt.Color"> 
+            <int>51</int> 
+            <int>102</int> 
+            <int>0</int> 
+            <int>255</int> 
+           </object> 
+          </void> 
+          <void method="setProperty"> 
+           <string>editable</string> 
+           <boolean>false</boolean> 
+          </void> 
+          <void method="setProperty"> 
+           <string>font</string> 
+           <object class="java.awt.Font"> 
+            <string>宋体</string> 
+            <int>0</int> 
+            <int>12</int> 
+           </object> 
+          </void> 
+          <void property="name"> 
+           <string>textArea1</string> 
+          </void> 
+         </object> 
+        </void> 
+       </object> 
+       <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+        <class>com.jformdesigner.runtime.NullConstraints</class> 
+        <void method="setProperty"> 
+         <string>x</string> 
+         <int>0</int> 
+        </void> 
+        <void method="setProperty"> 
+         <string>y</string> 
+         <int>145</int> 
+        </void> 
+        <void method="setProperty"> 
+         <string>width</string> 
+         <int>522</int> 
+        </void> 
+        <void method="setProperty"> 
+         <string>height</string> 
+         <int>115</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void property="name"> 
+       <string>this</string> 
+      </void> 
+     </object> 
+     <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+      <null/> 
+      <void method="setProperty"> 
+       <string>location</string> 
+       <object class="java.awt.Point"> 
+        <int>10</int> 
+        <int>10</int> 
+       </object> 
+      </void> 
+      <void method="setProperty"> 
+       <string>size</string> 
+       <object class="java.awt.Dimension"> 
+        <int>530</int> 
+        <int>300</int> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+ </object> 
+</java> 

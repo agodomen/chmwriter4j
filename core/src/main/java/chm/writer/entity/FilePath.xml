@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE sqlMap
+PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap>
+	<typeAlias alias="FilePath" type="chm.writer.entity.FilePath"/>
+	<insert id="insertFilePath" parameterClass="FilePath">
+		insert into file_path(path) values(#path#)
+	</insert>
+	<delete id="deleteAllFilePaths">
+		delete from file_path
+	</delete>
+	<select id="selectAllFilePaths" resultClass="FilePath">
+		select * from file_path
+	</select>
+</sqlMap>

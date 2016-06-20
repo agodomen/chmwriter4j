@@ -1,0 +1,18 @@
+02-14 14:13:30 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE PAIR(
+	KEY VARCHAR2(1024)
+	VALUE[*] VARCHAR2(4096)
+) "; expected "FOR, UNSIGNED, NOT, NULL, AS, DEFAULT, GENERATED, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+create table pair(
+	key varchar2(1024)
+	value varchar2(4096)
+) [42001-170]
+02-14 14:56:03 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "FILE_PATH[*] SELECT * FROM ENTRY"; expected "FROM, {"; SQL statement:
+FILE_PATH SELECT * FROM ENTRY [42001-170]
+02-14 16:48:33 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELECT * FROM ENTRY FILE_PATH INDEX_HTML_FILE"; SQL statement:
+SELECT * FROM ENTRY FILE_PATH INDEX_HTML_FILE [42000-170]
+02-14 18:03:49 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "FILE_PATH[*] SELECT * FROM ENTRY"; expected "FROM, {"; SQL statement:
+FILE_PATH SELECT * FROM ENTRY [42001-170]

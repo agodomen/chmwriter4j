@@ -11,6 +11,7 @@ import org.htmlparser.util.NodeList;
  * @author smilethat@qq.com
  */
 public class Entry {
+
 	private String name;
 	private String completeName;
 	private String path;

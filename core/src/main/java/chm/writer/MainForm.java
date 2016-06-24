@@ -189,9 +189,9 @@ public class MainForm extends JFrame {
 		pb = new JProgressBar();
 		scrollPane1 = new JScrollPane();
 		textArea1 = new JTextArea();
-
+		//This is for setting a information about creator or some other things.
 		//======== this ========
-		setTitle("CHMWriter 3.0 -by smilethat@qq.com");
+		setTitle("CHMWriter 3.0 -by example@163.com");
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		setIconImage(null);
 		setResizable(false);
